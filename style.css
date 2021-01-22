@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+	background-color: #ADEFD1;
+	width: 100vw;
+	height: 100vh;
+	margin: 0
+	
+}
+
+header{
+	background-color: #00203F;
+	width: 100%;
+	height: 50px;
+	color: #ADEFD1;
+	border-bottom: 1px solid #ADEFD1;
+	position: fixed;
+	top: 0;
+	left: 0
+}
+
+nav{
+	background-color: #00203F;
+	width: 100%;
+	margin-top: 50px
+}
+
+header h1{
+	font-size: 2rem;
+	display: inline;
+  	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	margin-top: 6px;
+	margin-left: 1rem;
+}
+
+div{
+	float: right;
+    display: inline;
+    border: 1px solid #ADEFD1;
+    padding: 3px;
+    margin-top: 6px;
+	margin-right: 1rem;
+	border-radius: 5px;
+	width: 40px;
+}
+
+div span{
+	padding: 1px;
+    background-color: #ADEFD1;
+   
+    height: 1px;
+    margin: 5px;
+    display: block;
+	border-radius: 3px
+}
+
+
+nav a{
+	display: block;
+	text-decoration: none;
+	color: #ADEFD1;
+	line-height: 1rem;
+	padding: 1rem;
+	text-align: center;
+	border-bottom: 1px solid #ADEFD1;
+	font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+.wrapper{
+	font-family: 'Raleway', 'Arial', sans-serif;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.boxes{
+	margin: 4rem 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px -5px #00203F;
+    padding: 2rem 4rem;
+	padding-bottom: .5rem;
+	background-color: rgba(255,255,255, .7);
+	font-size: .8rem;
+	line-height: 2rem 
+}
+
+.boxes h2, p{
+	margin-bottom: 3rem;
+}
+
+footer{
+	background-color: #ADEFD1;
+}
