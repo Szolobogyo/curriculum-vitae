@@ -7,9 +7,8 @@
 body{
 	background-color: #ADEFD1;
 	width: 100%;
-	height: 100%;
-	margin: 0
-	
+	height: 100vh;
+	margin: 0;
 }
 
 header{
@@ -17,16 +16,16 @@ header{
 	width: 100%;
 	height: 50px;
 	color: #ADEFD1;
-	border-bottom: 1px solid #ADEFD1;
 	position: fixed;
 	top: 0;
-	left: 0
+	left: 0;
 }
 
 nav{
 	background-color: #00203F;
 	width: 100%;
-	margin-top: 50px
+	margin-top: 50px;
+	
 }
 
 header h1{
@@ -38,10 +37,9 @@ header h1{
 	margin-left: 1rem;
 }
 
-div{
+.mobile-button{
 	float: right;
     display: inline;
-    border: 1px solid #ADEFD1;
     padding: 3px;
     margin-top: 6px;
 	margin-right: 1rem;
@@ -49,7 +47,11 @@ div{
 	width: 40px;
 }
 
-div span{
+.mobile-button:hover{
+	border: 1px solid #ADEFD1;
+}
+
+.mobile-button span{
 	padding: 1px;
     background-color: #ADEFD1;
     height: 1px;
@@ -63,11 +65,17 @@ nav a{
 	display: block;
 	text-decoration: none;
 	color: #ADEFD1;
+	font-size: 1rem;
 	line-height: 1rem;
 	padding: 1rem;
 	text-align: center;
 	border-bottom: 1px solid #ADEFD1;
 	font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+nav a:hover{
+	letter-spacing: 3px;
+	transition: all .3s ease-in-out;
 }
 
 .wrapper{
@@ -84,7 +92,54 @@ nav a{
     border-radius: 20px;
     box-shadow: 5px 5px 15px -5px #00203F;
 	font-size: 100%;
-	line-height: 1.5rem 
+	line-height: 1.5rem;	
+}
+
+@media (min-width: 670px){
+	.mobile-button{
+		display: none
+	}
+	nav{
+	   position: fixed;
+	   top: 0;
+   	   left: 0; 
+	}
+    nav a{
+		/*float: rigth;*/
+		display: inline-block;
+		border-bottom: none;
+	}	
+	.wrapper{
+		margin: 130px auto 0;
+	}
+}
+
+@media (min-width: 920px){
+	nav{
+		margin-top: 50px
+	}
+	nav a{
+		/*float: rigth;*/
+		font-size: 1.2rem;
+		padding: 1.5rem;
+		
+	}
+	.boxes{
+		font-size: 1.2rem;
+		line-height: 2rem;
+		padding: 2rem 3rem
+	}
+	.wrapper{
+		width: 75%;
+		margin: 150px auto 0
+	}
+}
+
+@media (min-width: 1200px){
+	.wrapper{
+		width: 65%;
+		margin: 150px auto 0
+	}
 }
 
 .text-align{
@@ -92,8 +147,11 @@ nav a{
 }
 
 .text-align h2{
-	margin-bottom: 2rem;
-	
+	margin-bottom: 2rem;	
+}
+
+div + li{
+	list-style: none
 }
 
 .boxes h3{
@@ -112,11 +170,21 @@ nav a{
 
 .boxes a:hover{
 	color: #ADEFD1;
-	font-style: bold;
+	font-weight: bold;
 }
+
+/*.boxes ul{
+	padding: 0;
+	list-style: none
+}*/
+
+/*.decor{
+	text-decoration: underline;
+}*/
+
 
 footer{
 	background-color: #00203F;
 	width: 100%;
-	height: 20vh
+	height: 200px;
 }
